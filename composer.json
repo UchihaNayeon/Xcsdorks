@@ -1,0 +1,20 @@
+{
+    "name": "itachi/xcs-dorker",
+    "description": "Google Dorker",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "itachi",
+            "email": "itachixuchiha24@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "XcsDorker\\": "App/",
+            "Colors\\": "App/",
+            "HttpRequest\\": "App/"
+        }
+    }
+}
