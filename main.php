@@ -2,17 +2,19 @@
 require_once __DIR__ . "/vendor/autoload.php";
 
 $Color = new \Colors\Color();
-$ZDork = new \Xcs\Main;
-$ZDork->cls();
+$XcsDork = new \XcsDorker\Main;
+$XcsDork->cls();
 
-$Zeeb = '
+$Xcs = '
 
-███████████████████
-█▄─▀─▄█─▄▄▄─█─▄▄▄▄█
-██▀─▀██─███▀█▄▄▄▄─█
-▀▄▄█▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀
+      
 
-echo str_replace('$', "\e[1;36m$\e[0m", $Itachi) . PHP_EOL;
+       ███████████████████
+       █▄─▀─▄█─▄▄▄─█─▄▄▄▄█
+       ██▀─▀██─███▀█▄▄▄▄─█
+       ▀▄▄█▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀
+';
+echo str_replace('$', "\e[1;36m$\e[0m", $Xcs) . PHP_EOL;
 
 echo $Color("𝙓𝑡𝑟𝑒𝑚𝑒 𝘾𝑎𝑟𝑑𝑒𝑟𝑠")->bg_light_red()->white()->italic()->center() . PHP_EOL;
 echo $Color("𝙎𝑜𝑐𝑖𝑒𝑡𝑦")->bg_light_red()->white()->italic()->center() . PHP_EOL . PHP_EOL;
@@ -32,12 +34,12 @@ $start = 0;
 $queue = 1;
 $tempFile = hash("sha256", rand(000, 999)) . ".txt";
 
-$xcsDork->setDork( $Dork );
+$XcsDork->setDork( $Dork );
 
 echo PHP_EOL;
 
 while(1){
-    if ($ZDork->search($start)) {
+    if ($XcsDork->search($start)) {
         $start = $start+10;
         foreach ($XcsDork->parseOutput() as $key => $value) {
 
